@@ -27,7 +27,7 @@ public class NQueenExample {
         //validate right diagonal
         while ((r >= 0) && (c < N)) {
             if (mat[r][c] == 1) {
-                return true;
+                return false;
             }
             r--;
             c++;
@@ -36,7 +36,7 @@ public class NQueenExample {
     }
 
     public static void main(String[] args) {
-        int N = 4;
+        int N = 5;
         int[][] mat = new int[N][N];
 
         for (int i = 0; i < N; i++) {
